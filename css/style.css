@@ -1,0 +1,137 @@
+@charset "UTF-8";
+body{
+	background: #00000;
+	front-size: 20px;
+	
+}
+
+header {
+	display: block;
+	height: 70px;
+		margin-left: 10%;
+		margin-right: 10%;
+}
+.left { /*это лого, смешарики потому что потом замени на нормальное*/
+   float: left;
+   width: 120px;
+}
+/*тут пошла хуйня с менюшкой и выподающей менюшкой вверху справа*/
+nav {
+    float: right;
+    width: 200px;
+    margin: auto;
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: auto;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+a {
+	color: #695753;
+  display: block;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: #b19891;
+  display: none;
+}
+.mass{
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.one ul li:hover .submenu {
+  display: block;
+}
+
+.container {
+		font-size: 20px;
+		border-width: 10px black;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 10px;
+		display: flex;		
+	}
+p{
+	font-family: "Monotype Corsiva" Cursive;
+	margin: 30px;
+	}
+/*это боковинка, где фотка*/
+aside {
+    background: #bde4e2;
+    padding: 20px;
+    width: 30%;
+    float: left;
+   }
+/*правая боковинка*/
+article {
+    margin-right: 5%;
+    margin-left: 35%;
+    display: block;
+    padding: 10px;
+    
+   }
+
+.round {
+	padding: 10px;
+    width: 220px; height: 220px;
+	border-radius: 50% /* Радиус скругления */
+   }
+.topbar {
+    
+	padding-bottom: 30px;
+	background-color: #dcf6ef;
+	overflow: hidden;
+	width: 100%;
+}
+/*это для значков*/
+.fa{
+    font-size: 16px;
+    margin-right: 15px;
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+footer{
+		margin-left: 10%;
+		margin-right: 10%;
+}
+/*кнопка сохранить*/
+.button{
+	background-color: #f34040; /* red */
+    
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 50%
+    
+
+}
+/*крестик галочка*/
+.flo{
+  width: 40px;
+}
